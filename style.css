@@ -1,0 +1,104 @@
+/* =========================================================
+   VARIÁVEIS
+========================================================= */
+
+
+:root {
+    --preto : #0B0D0F; /* fundo principal */
+    --grafite : #171A1D; /* cards/seções */
+    --cinza-metalico : #8B9299; /* textos secundários */
+    --branco : #F5F5F5; /* textos/titulos */
+    --azul-eletrico : #1479FF; /* botões/destaques */
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+    background-color: var(--preto);
+    color: var(--branco);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 0px 30px;
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+nav a {
+    font-size: 19px;
+    color: var(--branco);
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+}
+
+nav a:hover {
+    color: var(--azul-eletrico);
+}
+
+.logo img {
+    height: 110px;
+}
+
+.btn-agendar {
+    background-color: var(--azul-eletrico);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero h1 {
+    font-size: 132px;
+    margin-bottom: 0px;
+    padding-left: 86px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-left: 86px;
+}
+
+.hero h3 {
+    font-size: 24px;
+    line-height: 0.9;
+    padding-left: 86px;
+    color: var(--cinza-metalico)
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 20px;
+    text-align: center;
+    align-items: end;
+}
