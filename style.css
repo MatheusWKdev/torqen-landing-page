@@ -15,12 +15,24 @@
    BODY
 ========================================================= */
 
+html,
+body {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
 body {
     background-color: var(--preto);
     color: var(--branco);
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* =========================================================
@@ -36,14 +48,17 @@ header {
 }
 
 nav {
+    letter-spacing: 1px;
     padding: 0px 30px;
     display: flex;
-    gap: 36px;
+    gap: 32px;
     align-items: center;
 }
 
 nav a {
-    font-size: 19px;
+    font-family: "Teko", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
     color: var(--branco);
     text-decoration: none;
     transition: color 0.3s ease-out;
@@ -63,32 +78,115 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-weight: 600;
     text-decoration: none;
+}
+
+.btn-agendar:hover {
+    background-color: var(--branco);
+    color: var(--azul-eletrico);
+    transition: background-color 0.4s ease-out, color 0.4s ease-out;
 }
 
 /* =========================================================
    HERO
 ========================================================= */
 
+h1,
+h2 {
+    font-family: "Teko", sans-serif;
+    font-weight: 700;
+}
+
+.hero h1::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 5px;
+    background-color: var(--azul-eletrico);
+    margin-top: 15px;
+}
+
 .hero h1 {
-    font-size: 132px;
+    letter-spacing: 1px;
+    font-size: 124px;
     margin-bottom: 0px;
     padding-left: 86px;
+    padding-top: 44px;
+    line-height: 92px;
 }
 
 .hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 42px;
+    padding-top: 13px;
     padding-left: 86px;
+    font-weight: 500;
+    line-height: 0px;
 }
 
 .hero h3 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 0.9;
     padding-left: 86px;
+    font-weight: 600;
     color: var(--cinza-metalico)
+}
+
+.hero-bmw {
+    position: absolute;
+    top: 270px;
+    right: 20px;
+    width: 47%;
+    height: auto;
+    z-index: 0;
+
+    filter:
+    drop-shadow(0 0 4px var(--azul-eletrico))
+    drop-shadow(0 0 12px var(--azul-eletrico));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-destaques h4 {
+    font-family: "Teko", sans-serif;
+    font-weight: 550;
+    font-size: 24px;
+    height: 5px;
+}
+
+.hero-destaques p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--cinza-metalico);
+}
+
+.hero-destaques {
+    display: flex;
+    letter-spacing: 1px;
+    padding-left: 86px;
+    padding-top: 44px;
+    gap: 20px;
+}
+
+.destaque-icone img {
+    padding-top: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 /* =========================================================
@@ -100,5 +198,4 @@ footer {
     color: var(--branco);
     padding: 20px;
     text-align: center;
-    align-items: end;
 }
