@@ -84,6 +84,122 @@
         </section>
 
         <section id="services" class="services">
+            <h2>NOSSOS SERVIÇOS</h2>
+
+            <div class="services-carousel" aria-label="Carrossel de serviços">
+                <button class="services-arrow services-arrow-left" type="button" aria-label="Serviço anterior">←</button>
+
+                <div class="services-viewport">
+                    <div class="services-track">
+                        <article class="service-card">
+                            <div class="service-media">
+                                <!-- IMAGEM DO SERVIÇO: substituir depois -->
+                            </div>
+                            <h3>Mecânica Geral</h3>
+                            <p>Manutenção completa para manter motor, sistemas e componentes em perfeito funcionamento.</p>
+                        </article>
+
+                        <article class="service-card">
+                            <div class="service-media">
+                                <!-- IMAGEM DO SERVIÇO: substituir depois -->
+                            </div>
+                            <h3>Freios e Suspensão</h3>
+                            <p>Revisão de pastilhas, discos, amortecedores e itens de estabilidade com cuidado técnico.</p>
+                        </article>
+
+                        <article class="service-card">
+                            <div class="service-media">
+                                <!-- IMAGEM DO SERVIÇO: substituir depois -->
+                            </div>
+                            <h3>Diagnóstico Automotivo</h3>
+                            <p>Leitura precisa de falhas e análise dos sistemas eletrônicos para soluções mais assertivas.</p>
+                        </article>
+
+                        <article class="service-card">
+                            <div class="service-media">
+                                <!-- IMAGEM DO SERVIÇO: substituir depois -->
+                            </div>
+                            <h3>Alinhamento e Balanceamento</h3>
+                            <p>Ajustes para melhorar dirigibilidade, reduzir desgaste dos pneus e aumentar a segurança.</p>
+                        </article>
+
+                        <article class="service-card">
+                            <div class="service-media">
+                                <!-- IMAGEM DO SERVIÇO: substituir depois -->
+                            </div>
+                            <h3>Revisão Preventiva</h3>
+                            <p>Check-up completo para antecipar problemas e deixar o carro pronto para o dia a dia.</p>
+                        </article>
+
+                        <article class="service-card">
+                            <div class="service-media">
+                                <!-- IMAGEM DO SERVIÇO: substituir depois -->
+                            </div>
+                            <h3>Ar-Condicionado</h3>
+                            <p>Higienização, manutenção e verificação do sistema para conforto em qualquer trajeto.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <button class="services-arrow services-arrow-right" type="button" aria-label="Próximo serviço">→</button>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <h2>AVALIAÇÕES GOOGLE</h2>
+
+            <div class="reviews-summary">
+                <span class="reviews-score">5.0</span>
+                <div>
+                    <div class="reviews-stars" aria-label="5 estrelas">★★★★★</div>
+                    <p>Opiniões de clientes sobre atendimento, confiança e qualidade técnica.</p>
+                </div>
+            </div>
+
+            <div class="reviews-cards">
+                <article class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">R</div>
+                        <div>
+                            <h3>Robson Vieira</h3>
+                            <span>Cliente Torqen</span>
+                        </div>
+                    </div>
+                    <div class="review-stars" aria-label="5 estrelas">★★★★★</div>
+                    <p>Serviço de primeira, diferente de outras oficinas o carro voltou com o problema resolvido e limpinho, nota 10!</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">L</div>
+                        <div>
+                            <h3>Luan Souza</h3>
+                            <span>Cliente Torqen</span>
+                        </div>
+                    </div>
+                    <div class="review-stars" aria-label="5 estrelas">★★★★★</div>
+                    <p>Excelente mecânica automotiva! Serviço rápido, preço justo e atendimento muito bom. O mecânico explica direitinho o problema e mostra as peças trocadas, passando confiança. Recomendo para quem procura honestidade e qualidade no serviço</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">M</div>
+                        <div>
+                            <h3>Mai Roik</h3>
+                            <span>Cliente Torqen</span>
+                        </div>
+                    </div>
+                    <div class="review-stars" aria-label="5 estrelas">★★★★★</div>
+                    <p>Serviço de qualidade, preço justo … super recomendo</p>
+                </article>
+                
+                <div class="btn-reviews">
+                    <a href="https://www.google.com/maps/place/Torqen+Mec%C3%A2nica+e+Eletrica+Automotiva/@-26.1265505,-49.7811802,17z/data=!4m18!1m9!3m8!1s0x94dd935898de80f9:0x9f8db9ce5d38dbe8!2sTorqen+Mec%C3%A2nica+e+Eletrica+Automotiva!8m2!3d-26.1265505!4d-49.7811802!9m1!1b1!16s%2Fg%2F11mzpg32rh!3m7!1s0x94dd935898de80f9:0x9f8db9ce5d38dbe8!8m2!3d-26.1265505!4d-49.7811802!9m1!1b1!16s%2Fg%2F11mzpg32rh?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+                    class="btn-ver-avaliacoes" target="_blank" rel="noopener noreferrer">
+                        VER AVALIAÇÕES
+                    </a>
+                </div>
+            </div>
         </section>
 
         <section id="about" class="about">
@@ -96,5 +212,60 @@
     <footer>
         <p>&copy; 2026 Torqen. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        const servicesCarousel = document.querySelector(".services-carousel");
+
+        if (servicesCarousel) {
+            const track = servicesCarousel.querySelector(".services-track");
+            const cards = Array.from(servicesCarousel.querySelectorAll(".service-card"));
+            const previousButton = servicesCarousel.querySelector(".services-arrow-left");
+            const nextButton = servicesCarousel.querySelector(".services-arrow-right");
+            let currentIndex = 0;
+
+            function getCardsPerView() {
+                if (window.innerWidth <= 680) {
+                    return 1;
+                }
+
+                if (window.innerWidth <= 1024) {
+                    return 2;
+                }
+
+                return 3;
+            }
+
+            function updateCarousel() {
+                const cardsPerView = getCardsPerView();
+                const maxIndex = Math.max(cards.length - cardsPerView, 0);
+                currentIndex = Math.max(0, Math.min(currentIndex, maxIndex));
+                const activeIndex = Math.min(currentIndex + Math.floor(cardsPerView / 2), cards.length - 1);
+
+                const cardWidth = cards[0].getBoundingClientRect().width;
+                const trackGap = parseFloat(getComputedStyle(track).gap) || 0;
+                track.style.transform = `translateX(-${currentIndex * (cardWidth + trackGap)}px)`;
+
+                cards.forEach((card, index) => {
+                    card.classList.toggle("service-card-active", index === activeIndex);
+                });
+
+                previousButton.disabled = currentIndex === 0;
+                nextButton.disabled = currentIndex === maxIndex;
+            }
+
+            nextButton.addEventListener("click", () => {
+                currentIndex += 1;
+                updateCarousel();
+            });
+
+            previousButton.addEventListener("click", () => {
+                currentIndex -= 1;
+                updateCarousel();
+            });
+
+            window.addEventListener("resize", updateCarousel);
+            updateCarousel();
+        }
+    </script>
 </body>
 </html>
