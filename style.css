@@ -80,7 +80,7 @@ nav a:hover {
     align-items: center;
     border: 1px solid transparent;
     padding: 12px 18px;
-    border-radius: 4px;
+    border-radius: 50px;
     font-weight: 600;
     text-decoration: none;
 }
@@ -279,7 +279,7 @@ h2 {
     box-sizing: border-box;
     background-color: #0B0D0F;
     border: 1px solid rgba(139, 146, 153, 0.26);
-    border-radius: 8px;
+    border-radius: 25px;
     box-shadow: 0 0 24px rgba(20, 121, 255, 0.05);
     padding: 22px;
     text-align: center;
@@ -309,7 +309,7 @@ h2 {
     height: 100%;
     display: block;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 25px;
 }
 
 .service-card h3 {
@@ -432,7 +432,7 @@ h2 {
 .review-card {
     background-color: var(--grafite);
     border: 1px solid rgba(139, 146, 153, 0.24);
-    border-radius: 8px;
+    border-radius: 25px;
     padding: 26px;
     box-shadow: 0 0 24px rgba(20, 121, 255, 0.05);
 }
@@ -485,16 +485,26 @@ h2 {
 .btn-reviews {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 32px;
+}
+
+.btn-ver-avaliacoes {
     background-color: var(--azul-eletrico);
     color: var(--branco);
     text-decoration: none;
     font-family: "Teko", sans-serif;
     font-size: 18px;
     font-weight: 600;
-    padding: 12px 24px;
-    border-radius: 6px;
-    margin-top: 32px;
+    padding: 12px 56px;
+    border-radius: 60px;
+    border: 2px solid transparent;
+    border-color: var(--azul-eletrico);
+}
+
+.btn-ver-avaliacoes:hover {
+    background-color: var(--grafite);
+    color: var(--azul-eletrico);
+    transition: background-color 0.4s ease-out, color 0.4s ease-out;
 }
 
 @media (max-width: 1024px) {
@@ -523,6 +533,124 @@ h2 {
 }
 
 /* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+    background-color: var(--grafite);
+    min-height: 80vh;
+}
+
+.contact h2 {
+    color: var(--branco);
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-family: "Teko", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    padding-top: 56px;
+    margin: 0;
+}
+
+.contact h2::after {
+    content: "";
+    display: block;
+    background-color: var(--azul-eletrico);
+    width: 125px;
+    height: 5px;
+    margin: 4px auto 0;
+}
+
+.contact p {
+    color: var(--cinza-metalico);
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    margin: 8px 0 0;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    max-width: 1000px;
+    margin: 42px auto 0;
+}
+
+.contact-card {
+    background-color: var(--preto);
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding: 35px 25px;
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--azul-eletrico);
+}
+
+.contact-card img {
+    width: 130px;
+    height: 130px;
+}
+
+.contact-card h3 {
+    font-family: "Teko", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 15px 0 5px;
+}
+
+.contact-card p {
+    color: var(--cinza-metalico);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-card a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 9px 20px;
+
+    background-color: var(--azul-eletrico);
+    color: var(--branco);
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+    border: 2px solid var(--azul-eletrico);
+    border-radius: 50px;
+
+    transition: background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.contact-card a:hover {
+    background-color: transparent;
+    color: var(--azul-eletrico);
+
+}
+
+/*============================================
+   LOCALIZAÇÃO  
+========================================================= */
+
+.localizacao {
+    background-color: var(--preto);
+    min-height: 80vh;
+}
+
+/*============================================
    FOOTER
 ========================================================= */
 
