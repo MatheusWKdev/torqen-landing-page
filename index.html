@@ -93,7 +93,7 @@
                     <div class="services-track">
                         <article class="service-card">
                             <div class="service-media">
-                                <!-- IMAGEM DO SERVIÇO: substituir depois -->
+                                <img src="img/rebuild_repair an engine.jpg" alt="Reparo de motor">
                             </div>
                             <h3>Mecânica Geral</h3>
                             <p>Manutenção completa para manter motor, sistemas e componentes em perfeito funcionamento.</p>
@@ -101,7 +101,7 @@
 
                         <article class="service-card">
                             <div class="service-media">
-                                <!-- IMAGEM DO SERVIÇO: substituir depois -->
+                                <img src="img/freio e embreagem.png" alt="Freios e Embreagem">
                             </div>
                             <h3>Freios e Suspensão</h3>
                             <p>Revisão de pastilhas, discos, amortecedores e itens de estabilidade com cuidado técnico.</p>
@@ -109,7 +109,7 @@
 
                         <article class="service-card">
                             <div class="service-media">
-                                <!-- IMAGEM DO SERVIÇO: substituir depois -->
+                                <img src="img/diagnostico autmotivo.jpg" alt="Diagnóstico Automotivo">
                             </div>
                             <h3>Diagnóstico Automotivo</h3>
                             <p>Leitura precisa de falhas e análise dos sistemas eletrônicos para soluções mais assertivas.</p>
@@ -117,7 +117,7 @@
 
                         <article class="service-card">
                             <div class="service-media">
-                                <!-- IMAGEM DO SERVIÇO: substituir depois -->
+                                <img src="img/balanceamento.jpg" alt="Balanceamento e Alinhamento">
                             </div>
                             <h3>Alinhamento e Balanceamento</h3>
                             <p>Ajustes para melhorar dirigibilidade, reduzir desgaste dos pneus e aumentar a segurança.</p>
@@ -125,7 +125,7 @@
 
                         <article class="service-card">
                             <div class="service-media">
-                                <!-- IMAGEM DO SERVIÇO: substituir depois -->
+                                <img src="img/revisao preventiva.jpg" alt="Revisão Preventiva">
                             </div>
                             <h3>Revisão Preventiva</h3>
                             <p>Check-up completo para antecipar problemas e deixar o carro pronto para o dia a dia.</p>
@@ -133,7 +133,7 @@
 
                         <article class="service-card">
                             <div class="service-media">
-                                <!-- IMAGEM DO SERVIÇO: substituir depois -->
+                                <img src="img/arcondicionado.jpg" alt="Ar-Condicionado">
                             </div>
                             <h3>Ar-Condicionado</h3>
                             <p>Higienização, manutenção e verificação do sistema para conforto em qualquer trajeto.</p>
@@ -237,18 +237,66 @@
         </section>
 
         <section id="localizacao" class="localizacao">
-            <h2>LOCALIZAÇÃO</h2>
 
-            <p>Venha nos visitar e conheça a Torqen.</p>
+    <div class="localizacao-container">
 
-            <div class="localizacao-mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.187882168042!2d-49.78336868456386!3d-26.12655048445354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dd935898de80f9%3A0x9f8db9ce5d38dbe8!2sTorqen%20Mec%C3%A2nica%20e%20Eletrica%20Automotiva!5e0!3m2!1spt-BR!2sbr!4v1692430912345!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="info-localizacao">
+
+            <h3>NOSSA LOCALIZAÇÃO</h3>
+            <h2>VENHA NOS VISITAR</h2>
+            <p>
+                Estamos prontos para receber você em nossa loja.
+            </p>
+
+            <div class="endereco">
+
+                <p class="titulo-info">ENDEREÇO</p>
+
+                <p>
+                    R. Guilherme Valério, 266<br>
+                    Jardim América<br>
+                    Mafra - PR<br>
+                    89300-652
+                </p>
+
+                <div class="horario">
+
+                    <p class="titulo-info">HORÁRIO DE FUNCIONAMENTO</p>
+
+                    <p>
+                        Segunda a Sexta: 08:00-12:00 13:00-18:00
+                    </p>
+                    <p>
+                        Sábado/Domingo: Fechado
+                    </p>
+
+                </div>
             </div>
-        </section>
+        </div>
+        <div class="mapa-container">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.1532533004124!2d-49.78375512371202!3d-26.126545660817477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dd935898de80f9%3A0x9f8db9ce5d38dbe8!2sTorqen%20Mec%C3%A2nica%20e%20Eletrica%20Automotiva!5e0!3m2!1spt-BR!2sbr!4v1788480325378!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Torqen. Todos os direitos reservados.</p>
+        <p>
+        © <span id="ano"></span> TORQEN. Todos os direitos reservados.
+        </p>
+
+         <script>
+        document.getElementById("ano").textContent = new Date().getFullYear();
+        </script>
     </footer>
 
     <script>

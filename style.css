@@ -40,13 +40,23 @@ body {
 ========================================================= */
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    z-index: 1000;
+
     background-color: var(--preto);
     color: var(--branco);
+
     padding: 12px 40px;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
 nav {
     letter-spacing: 1px;
     padding: 0px 30px;
@@ -96,7 +106,7 @@ nav a:hover {
 ========================================================= */
 
 .hero {
-    min-height: 77vh;
+    min-height: 92vh;
 }
 
 h1,
@@ -119,7 +129,7 @@ h2 {
     font-size: 124px;
     margin-bottom: 0px;
     padding-left: 86px;
-    padding-top: 44px;
+    padding-top: 130px;
     line-height: 92px;
 }
 
@@ -141,7 +151,7 @@ h2 {
 
 .hero-bmw {
     position: absolute;
-    top: 270px;
+    top: 240px;
     right: 20px;
     width: 47%;
     height: auto;
@@ -309,7 +319,6 @@ h2 {
     height: 100%;
     display: block;
     object-fit: cover;
-    border-radius: 25px;
 }
 
 .service-card h3 {
@@ -646,10 +655,109 @@ h2 {
 ========================================================= */
 
 .localizacao {
-    background-color: var(--preto);
-    min-height: 80vh;
+    padding: 120px 0;
 }
 
+.localizacao-container {
+    max-width: 1450px;
+    margin-left: 120px;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.info-localizacao {
+    width: 390px;
+    flex-shrink: 0;
+}
+
+.info-localizacao h3 {
+    color: #b3b3b3;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin: 100px 0 8px 0;
+}
+
+.info-localizacao h2 {
+    color: var(--branco);
+    font-size: 64px;
+    line-height: 0.9;
+    white-space: nowrap;
+    margin: 0 0 28px 0;
+}
+
+.info-localizacao h2::after {
+    content: "";
+    display: block;
+    background-color: var(--azul-eletrico);
+    width: 300px;
+    height: 5px;
+    margin: 10px auto 0;
+}
+
+.info-localizacao > p {
+    color: var(--cinza-claro);
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.endereco {
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(
+        145deg,
+        #202020,
+        #181818
+    );
+    border: 2px solid rgba(255,255,255,.08);
+    border-radius: 16px;
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.03);
+}
+
+.endereco .titulo-info {
+    margin-top: 1px;
+}
+
+.endereco .titulo-info,
+.horario .titulo-info {
+    color: var(--branco);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.endereco p,
+.horario p {
+    color: var(--cinza-claro);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.horario {
+    border-top: 2px solid #3a3838;
+    margin-top: 24px;
+    padding-top: 10px;
+}
+
+.mapa-container {
+    width: 820px;
+    margin-top: 150px;
+    margin-left: 250px;
+
+}
+
+.mapa-container iframe {
+    width: 100%;
+    height: 550px;
+    border: none;
+    border-radius: 18px;
+}
 /*============================================
    FOOTER
 ========================================================= */
