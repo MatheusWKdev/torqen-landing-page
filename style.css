@@ -1,4 +1,4 @@
-/* =========================================================
+/* ======================================================
    VARIÁVEIS
 ========================================================= */
 
@@ -11,7 +11,7 @@
     --azul-eletrico : #1479FF; /* botões/destaques */
 }
 
-/* =========================================================
+/* ======================================================
    BODY
 ========================================================= */
 
@@ -35,7 +35,7 @@ body {
     flex-direction: column;
 }
 
-/* =========================================================
+/* ======================================================
    HEADER
 ========================================================= */
 
@@ -57,6 +57,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 nav {
     letter-spacing: 1px;
     padding: 0px 30px;
@@ -101,7 +102,7 @@ nav a:hover {
     transition: background-color 0.4s ease-out, color 0.4s ease-out;
 }
 
-/* =========================================================
+/* ======================================================
    HERO
 ========================================================= */
 
@@ -203,7 +204,7 @@ h2 {
     gap: 15px;
 }
 
-/* =========================================================
+/* ======================================================
    SERVICES
 ========================================================= */
 
@@ -343,7 +344,7 @@ h2 {
 
 @media (max-width: 1024px) {
     .service-card {
-        flex-basis: calc((100% - 28px) / 2);
+        flex-basis: calc((100% - 56px) / 3);
     }
 }
 
@@ -371,7 +372,7 @@ h2 {
     }
 }
 
-/* =========================================================
+/* ======================================================
    REVIEWS
 ========================================================= */
 
@@ -518,7 +519,7 @@ h2 {
 
 @media (max-width: 1024px) {
     .reviews-cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -541,7 +542,7 @@ h2 {
     }
 }
 
-/* =========================================================
+/* ======================================================
    CONTACT
 ========================================================= */
 
@@ -652,7 +653,7 @@ h2 {
 
 /*============================================
    LOCALIZAÇÃO  
-========================================================= */
+============================================== */
 
 .localizacao {
     padding: 120px 0;
@@ -677,7 +678,7 @@ h2 {
     color: #b3b3b3;
     font-size: 22px;
     letter-spacing: 2px;
-    margin: 100px 0 8px 0;
+    margin: 0 0 8px 0;
 }
 
 .info-localizacao h2 {
@@ -758,9 +759,10 @@ h2 {
     border: none;
     border-radius: 18px;
 }
+
 /*============================================
    FOOTER
-========================================================= */
+============================================== */
 
 footer {
     background-color: var(--preto);
@@ -768,3 +770,763 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+/* =========================
+    RESPONSIVIDADE
+========================= */
+
+    @media (max-width: 1024px) {
+        /* tablet */
+
+        /* ======================
+            HEADER
+        ========================= */
+        
+        nav {
+            gap: 10px;
+        }
+
+        .btn-agendar {
+            padding: 5px 10px ;
+        }
+        
+        .logo img {
+            height: 80px;
+        }
+
+        /* ======================
+            HERO
+        ========================= */
+
+        .hero h1 {
+            font-size: 66px;
+            padding-left: 40px;
+            padding-top: 70px;
+            line-height: 60px;
+            
+        }
+
+        .hero h1::after {
+            width: 150px;
+            height: 4px;
+            margin-top: 0px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            padding-left: 40px;
+            padding-top: 1px;
+        }
+
+        .hero h3 {
+            font-size: 16px;
+            padding-left: 40px;
+            padding-top: 1px;
+        }
+
+        .hero-destaques {
+            padding-left: 40px;
+            padding-top: 20px;
+            gap: 8px;
+        }
+
+        .hero-destaques h4 {
+            font-size: 18px;
+        }
+        
+        .hero-destaques p {
+            font-size: 14px;
+        }
+
+        .hero-icone img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .hero-bmw {
+            top: 108px;
+            right: 20px;
+            width: 50%;
+        }
+
+        /* ======================
+            SERVICES
+        ========================= */
+
+        .services h2 {
+            font-size: 32px;
+            padding-top: 20px;
+        }
+
+        .services h2::after {
+            width: 100px;
+            height: 4px;
+            margin-top: 0px;
+        }
+
+        .service-card {
+            min-height: 240px;
+            padding: 18px;
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+        }
+
+        .service-card p {
+            font-size: 13px;
+        }
+
+        .services-carousel {
+            padding: 0px 35px 0;
+            gap: 12px;
+        }
+
+        .service-card-active {
+            transform: scale(1.03);
+        
+        }
+
+        .services-viewport {
+            padding: 24px 0;
+        }
+
+        /* ======================
+            REVIEWS
+        ========================= */
+
+        .reviews {
+            padding: 40px 35px 40px;
+        }
+
+        .reviews h2 {
+            font-size: 32px;
+            padding-top: 0px;
+        }
+
+        .reviews h2::after {
+            width: 100px;
+            height: 4px;
+            margin-top: 0px;
+        }
+
+        .reviews-summary {
+            max-width: 100%;
+            margin: 20px auto 30px;
+            gap: 12px;
+        }
+        
+        /* ======================
+            CONTACT
+        ========================= */
+
+        .contact {
+            padding: 40px 35px 40px;
+        }
+
+        .contact h2 {
+            font-size: 32px;
+            padding-top: 0px;
+        }
+
+        .contact h2::after {
+            width: 100px;
+            height: 4px;
+            margin-top: 0px;
+        }
+
+        .contact p {
+            font-size: 14px;
+        }
+
+        .contact cards {
+            gap: 12px;
+        }
+
+        .contact-card {
+            padding: 20px;
+        }
+
+        .contact-card h3 {
+            font-size: 20px;
+        }
+
+        .contact-card p {
+            font-size: 13px;
+        }
+
+        .contact-card img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .contact-card a {
+            font-size: 13px;
+            padding: 8px 16px;
+        }
+
+        /* ======================
+            LOCALIZAÇÃO
+        ========================= */
+
+        .localizacao {
+            padding: 0 20px 80px;
+        }
+        
+        .info-localizacao {
+            width: 300px;
+        }
+
+        .info-localização h3 {
+            font-size: 18px;
+            
+        }
+
+        .info-localizacao h2 {
+            font-size: 48px;
+            
+        }
+
+        .info-localizacao h2::after {
+            width: 200px;
+            height: 4px;
+            margin-top: 0px;
+        }
+
+        .info-localizacao > p {
+            font-size: 16px;
+        }
+
+        .endereco {
+            padding: 20px;
+        }
+
+        .localizacao-container {
+            margin-left: 20px;
+            margin-right: 20px;
+            gap: 40px;
+        }
+
+        .mapa-container {
+            width: 550px;
+            height: 646px;
+            margin-top: 189px;
+            margin-left: 0px;
+        }
+
+        /* =========================
+            MENU MOBILE
+        ========================= */
+
+            .menu-toggle {
+                display: none;
+            }
+
+
+    }
+    @media (max-width: 680px) {
+        /* celular */
+
+        /* ======================
+            HEADER
+        ========================= */
+
+        header {
+            height: 65px;
+            padding: 12px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        
+        .logo img {
+            height: 70px;
+            padding: 12px 0 0 0;
+
+        }
+
+        /* ======================
+            MENU MOBILE
+        ========================= */
+
+        .menu-toggle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+            width: 42px;
+            height: 42px;
+            padding: 0;
+            margin-right: 10px;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            width: 22px;
+            height: 5px;
+            background-color: var(--branco);
+            transition: 0.3s;
+        }
+
+        nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px 20px;
+            background-color: var(--preto);
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        nav.active {
+            display: flex;
+        }
+
+        nav a {
+            font-size: 18px;
+        }
+
+        .btn-agendar {
+            width: 100%;
+            max-width: 220px;
+        }
+
+        /* ======================
+            HERO
+        ========================= */
+
+        .hero {
+            min-height: 96vh;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            padding-left: 30px;
+            padding-top: 100px;
+            line-height: 44px;
+            
+        }
+
+        .hero h1::after {
+            width: 120px;
+            height: 3px;
+            margin-top: 0px;
+        }
+
+        .hero h2 {
+            font-size: 26px;
+            padding-left: 30px;
+            padding-top: 1px;
+        }
+
+        .hero h3 {
+            font-size: 13px;
+            padding-left: 30px;
+            padding-top: 1px;
+        }
+
+        .hero-destaques {
+            flex-direction: column;
+            padding-left: 30px;
+            padding-top: 60px;
+            gap: 20px;
+        }
+
+        .hero-destaques h4 {
+            font-size: 18px;
+        }
+        
+        .hero-destaques p {
+            font-size: 12px;
+        }
+
+        .destaque-icone img {
+            width: 55px;
+            height: 55px;
+        }
+
+        .hero-bmw {
+            top: 200px;
+            right: 15px;
+            width: 330px;
+        }
+
+        /* ======================
+            SERVICES
+        ========================= */
+
+        .services {
+            min-height: 66vh;
+        }
+
+        .services h2 {
+            font-size: 28px;
+            padding: 20px 28px 0 30px;
+        }
+
+        .services h2::after {
+            width: 86px;
+            height: 3px;
+            margin-top: 0px;
+        }
+
+        .service-media {
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+
+        .services-carousel {
+            padding: 30px 40px 0;
+            gap: 10px;
+        }
+
+        .service-card {
+            flex-basis: 100%;
+            min-height: auto;
+            padding: 18px;
+            border-radius: 20px;
+        }
+
+        .service-card p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .services-viewport {
+            padding: 15px 0;
+        }
+
+        .service-card-active {
+            transform: scale(1);
+        }
+
+        .services-arrow {
+            width: 36px;
+            height: 36px;
+            flex-basis: 36px;
+            font-size: 20px;
+        }
+
+        /* ======================
+            REVIEWS
+        ========================= */
+
+        .reviews {
+            padding: 35px 30px 35px;
+        }
+
+        .reviews h2 {
+            font-size: 28px;
+            padding-top: 0px;
+        }
+
+        .reviews h2::after {
+            width: 80px;
+            height: 3px;
+            margin-top: 0px;
+        }
+
+        .reviews-summary {
+            max-width: 500px;
+            margin: 20px auto 30px;
+            gap: 12px;
+        }
+
+        .reviews-cards {
+            gap: 20px;
+        }
+
+        .review-card {
+            padding: 20px;
+        }
+
+        .review-card h3 {
+            font-size: 20px;
+        }
+
+        .review-card p {
+            font-size: 13px;
+        }
+
+        .btn-ver-avaliacoes {
+            font-size: 16px;
+            padding: 10px 48px;
+        }
+
+        /* ======================
+            CONTACT
+        ========================= */
+
+        .contact {
+            padding: 30px 20px 30px;
+        }
+
+        .contact h2 {
+            font-size: 28px;
+            padding-top: 0px;
+        }
+
+        .contact h2::after {
+            width: 80px;
+            height: 3px;
+            margin-top: 0px;
+        }
+
+        .contact p {
+            font-size: 13px;
+        }
+
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            max-width: 500px;
+            padding-bottom: 20px;
+            gap: 20px;
+        }
+
+        .contact-card {
+            padding: 20px;
+        }
+
+        /* ======================
+            LOCALIZAÇÃO
+        ========================= */
+
+        .localizacao {
+            padding: 50px 20px 0;
+        }
+
+        .localizacao-container {
+            flex-direction: column;
+            margin-left: 0px;
+            margin-right: 42px;
+            gap: 0;
+        }
+
+        .info-localizacao h3 {
+            font-size: 14px;
+        }
+
+        .info-localizacao h2 {
+            font-size: 42px;
+        }
+
+        .info-localizacao h2::after {
+            width: 150px;
+            height: 3px;
+            margin-top: 0px;
+        }
+
+        .info-localizacao > p {
+            font-size: 14px;
+        }
+
+        .info-localizacao {
+            width: 500px;
+        }
+
+        .endereco {
+            padding: 20px 20px 0;
+        }
+
+        .endereco .titulo-info,
+        .horario .titulo-info {
+            font-size: 18px;
+        }
+
+        .endereco p,
+        .horario p {    
+            font-size: 16px;
+        }
+
+        .mapa-container {
+            width: 600px;
+            margin-top: 20px;
+            margin-left: 46px;
+
+        }
+    }
+
+    @media (max-width: 480px) {
+        /* celular pequeno */
+
+        /* ======================
+            HEADER
+        ========================= */
+
+        .logo img {
+            height: 55px;
+        }
+
+        /* ======================
+            MENU MOBILE
+        ========================= */
+
+        .menu-toggle {
+            width: 36px;
+            height: 36px;
+            margin-right: 0;
+        }
+
+        /* ======================
+            HERO
+        ========================= */
+
+        .hero h1 {
+            padding-top: 70px;
+            font-size: 50px;
+            line-height: 38px;
+        }
+
+        .hero h2 {
+            font-size: 22px;
+            padding-top: 1px;
+        }
+
+        .hero h3 {
+            font-size: 12px;
+            padding-top: 1px;
+        }
+
+        .hero-destaques {
+            padding-left: 30px;
+            padding-top: 10px;
+            gap: 0;
+        }
+
+        .hero-bmw {
+            top: 550px;
+            right: 45px;
+            width: 380px;
+        }
+
+        /* ======================
+            LOCALIZAÇÃO
+        ========================= */
+
+        .info-localizacao {
+            width: 300px;
+        }
+
+        .mapa-container {
+            width: 390px;
+            margin-top: 20px;
+            margin-left: 46px;
+        }
+
+        .mapa-container iframe {
+            height: 400px;
+        }
+    }
+    @media (max-width: 360px) {
+        /* celular muito pequeno */
+
+        /* ======================
+            HERO
+        ========================= */
+
+        .hero {
+            min-height: 97vh;
+        }
+
+        .hero h1 {
+            padding-top: 60px;
+            font-size: 42px;
+            line-height: 32px;
+        }
+
+        .hero h2 {
+            font-size: 20px;
+            padding-top: 1px;
+        }
+
+        .hero h3 {
+            font-size: 12px;
+            padding-top: 1px;
+        }
+
+        .hero-destaques {
+            padding-left: 20px;
+            padding-top: 10px;
+            gap: 0;
+        }
+
+        .hero-destaques h4 {
+            font-size: 16px;
+        }
+
+        .hero-destaques p {
+            font-size: 12px;
+        }
+
+        .hero-bmw {
+            top: 530px;
+            right: 20px;
+            width: 320px;
+        }
+
+        /* ======================
+            SERVICES
+        ========================= */
+
+        .services {
+            min-height: 66vh;
+        }
+
+        .services-carousel {
+            padding: 50px 10px 0;
+        }
+
+
+
+        /* ======================
+            LOCALIZAÇÃO
+        ========================= */
+
+        .info-localizacao {
+            width: 260px;
+        }
+
+        .info-localizacao h3 {
+            font-size: 13px;
+        }
+
+        .info-localizacao h2 {
+            font-size: 36px;
+        }
+
+        .info-localizacao h2::after {
+            width: 160px;
+        }
+
+        .info-localizacao p {
+            font-size: 13px;
+        }
+
+        .mapa-container {
+            width: 320px;
+        }
+
+        .endereco .titulo-info {
+            font-size: 16px;
+        }
+
+        .endereco p,
+        .horario p {    
+            font-size: 14px;
+        }
+    }

@@ -19,6 +19,12 @@
             <img src="img/logo-torqen.png" alt="Logo Torqen">
         </a>
 
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
             <nav>
                 <a href="#home"> HOME </a>
                 <a href="#services"> SERVIÇOS </a>
@@ -245,7 +251,7 @@
             <h3>NOSSA LOCALIZAÇÃO</h3>
             <h2>VENHA NOS VISITAR</h2>
             <p>
-                Estamos prontos para receber você em nossa loja.
+                Estamos prontos para receber você em nossa área.
             </p>
 
             <div class="endereco">
@@ -314,10 +320,6 @@
                     return 1;
                 }
 
-                if (window.innerWidth <= 1024) {
-                    return 2;
-                }
-
                 return 3;
             }
 
@@ -353,5 +355,29 @@
             updateCarousel();
         }
     </script>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector("nav");
+
+        menuToggle.addEventListener("click", () => {
+            const menuAberto = nav.classList.toggle("active");
+
+            menuToggle.setAttribute("aria-expanded", menuAberto);
+            menuToggle.setAttribute(
+                "aria-label",
+                menuAberto ? "Fechar menu" : "Abrir menu"
+            );
+        });
+
+        nav.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Abrir menu");
+            });
+        });
+    </script>
+
 </body>
 </html>
