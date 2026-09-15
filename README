@@ -1,0 +1,78 @@
+# Torqen — Landing Page
+
+Landing page desenvolvida como proposta de presença digital para a **Torqen Mecânica e Elétrica Automotiva**.
+
+O projeto foi criado com foco em uma identidade visual moderna, automotiva e profissional, destacando os serviços oferecidos, formas de contato, avaliações e localização da empresa.
+
+## Objetivo
+
+Criar uma landing page que apresente a empresa de forma clara e profissional, facilitando o acesso às principais informações e aos canais de contato.
+
+O projeto também foi desenvolvido como parte dos meus estudos e preparação para oportunidades de estágio em desenvolvimento web.
+
+## Funcionalidades
+
+- Design responsivo para diferentes tamanhos de tela
+- Navegação entre as seções da página
+- Menu mobile
+- Carrossel de serviços
+- Seção de avaliações
+- Links de contato
+- Integração com localização via Google Maps
+- Layout adaptado para desktop, tablet e celular
+- Identidade visual personalizada
+
+## Seções
+
+- **Home** — Apresentação da empresa e principais diferenciais
+- **Serviços** — Principais serviços oferecidos
+- **Avaliações** — Destaque para avaliações e credibilidade
+- **Contato** — WhatsApp, telefone e Instagram
+- **Localização** — Endereço, horário de funcionamento e mapa
+
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript
+- Google Maps
+- Google Fonts
+- Git
+- GitHub
+
+## Identidade Visual
+
+A identidade visual foi construída com uma proposta automotiva e tecnológica, utilizando tons escuros combinados com azul elétrico.
+
+### Cores principais
+
+- Preto: `#0B0D0F`
+- Grafite: `#171A1D`
+- Cinza metálico: `#8B9299`
+- Branco: `#F5F5F5`
+- Azul elétrico: `#1479FF`
+
+### Tipografia
+
+- **Teko** — títulos e elementos de destaque
+- **Inter** — textos e navegação
+
+## Responsividade
+
+O layout foi desenvolvido pensando em diferentes dispositivos:
+
+- Desktop
+- Tablet
+- Smartphone
+
+Foram realizados testes em diferentes larguras de tela para garantir que os elementos se adaptem corretamente sem causar overflow horizontal.
+
+## Estrutura do projeto
+
+```text
+torqen-landing-page/
+│
+├── img/
+├── index.html
+├── style.css
+└── README.md
